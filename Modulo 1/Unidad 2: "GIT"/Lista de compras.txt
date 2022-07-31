@@ -10,6 +10,8 @@ manzana
 zanahoria
 arroz
 queso
+palta
+asado
 
 
 
