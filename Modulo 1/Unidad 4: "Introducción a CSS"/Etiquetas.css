@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
+body {
+    background: rgba(46, 44, 36, 0.295);
+    font-family: "News Cycle", sans-serif;
+    margin-left: 45px;
+}
+
+h1{ color: #ff6;
+    text-align:left;
+    background-color: black;
+    font-weight: 700;
+
+}
+
+h3{
+    colo: black;
+   text-decoration: dotted;
+} 
+
+.listas{
+    color:#ff6;
+    font-size: 22px;
+    background-color: black;
+}
