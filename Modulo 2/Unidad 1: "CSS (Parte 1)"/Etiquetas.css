@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+
+body {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 91%,
+    rgba(69, 69, 42, 1) 92%,
+    rgba(0, 0, 0, 1) 96%
+  );
+  font-family: "Roboto Condensed", sans-serif;
+  margin-left: 45px;
+}
+
+h1 {
+  color: #ff6;
+  font-weight: 700;
+}
+.caja1 {
+  margin: 30px;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 91%,
+    rgba(69, 69, 42, 1) 92%,
+    rgba(0, 0, 0, 1) 96%
+  );
+  padding: 5px;
+  border-radius: 51px 13px 51px 13px;
+  -webkit-border-radius: 51px 13px 51px 13px;
+  -moz-border-radius: 51px 13px 51px 13px;
+  border: 2px solid #ffe650;
+  cursor: none;
+  box-shadow: 0px 0px 400px -62px rgba(255, 230, 2, 0.75);
+  -webkit-box-shadow: 0px 0px 400px -62px rgba(255, 230, 2, 0.75);
+  -moz-box-shadow: 0px 0px 400px -62px rgba(255, 230, 2, 0.75);
+}
+
+.caja2 {
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  border: 3px solid #ffe900;
+}
+
+h3 {
+  colo: black;
+  text-decoration: dotted;
+}
+
+.listas {
+  color: #ff6;
+  font-size: 22px;
+  background-color: rgba(245, 226, 21, 0.349);
+}
