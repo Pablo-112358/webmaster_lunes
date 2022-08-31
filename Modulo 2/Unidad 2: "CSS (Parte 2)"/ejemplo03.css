@@ -1,0 +1,46 @@
+.contenedor3 {
+  background-color: white;
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  border: 3px solid black;
+  color: white;
+}
+
+.item1 {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center; /* eje Y*/
+  justify-content: center; /* eje X*/
+  margin: 0%;
+}
+
+.item2 {
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center; /* eje Y*/
+  justify-content: center; /* eje X*/
+  margin: 0%;
+}
+
+.item3 {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  font-size: 20px;
+  align-items: center; /* eje Y*/
+  justify-content: center; /* eje X*/
+  margin: 0%;
+}
