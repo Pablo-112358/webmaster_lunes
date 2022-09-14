@@ -18,7 +18,7 @@
     <div class="col" style="background-color: rgb(206, 206, 236)">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
+              <a class="navbar-brand" href="#">Navegación</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -32,22 +32,22 @@
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
+                      Desplegables
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">accion 1</a></li>
+                      <li><a class="dropdown-item" href="#">accion 2</a></li>
                       <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                      <li><a class="dropdown-item" href="#"> accion 1 </a></li>
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link disabled">En construción</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
+                  <input class="form-control me-2" type="search" placeholder="ejemplo" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
               </div>
             </div>
@@ -184,7 +184,7 @@
           </div> </div>
       </div>
       <div class="row">
-        <div class="col" style="background-color: coral"> 
+        <div class="col-3" style="background-color: coral"> 
                 <div class="form-check mb-3">
                 <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
                 <label class="form-check-label" for="validationFormCheck2">FEA</label>
@@ -206,22 +206,77 @@
             </div>
             
         </div>
-        <div class="col" style="background-color: lightgrey"><div class="form-check mb-3">
+        <div class="col-3" style="background-color: lightgrey"><div class="form-check mb-3">
             <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-            <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+            <label class="form-check-label" for="validationFormCheck1">Check si desea usar la ventana modal</label>
             <div class="invalid-feedback">Example invalid feedback text</div>
+            <h6>ventana modal</h6>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Abrir Ventana Modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Esto es una Ventana Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Los modales se construyen con HTML, CSS y JavaScript. Se colocan sobre todo lo demás en el documento y eliminan el desplazamiento <body>para que el contenido modal se desplace en su lugar.
+                        Al hacer clic en el "telón de fondo" modal, se cerrará automáticamente el modal.
+                            
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                    </div>
+                </div>
+                </div>
+            </div>
           </div></div>
-        <div class="col" style="background-color: lightgreen"><div class="form-check mb-3">
-            <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-            <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
-            <div class="invalid-feedback">Example invalid feedback text</div>
-          </div></div>
-        <div class="col" style="background-color: lightblue"><div class="form-check mb-3">
-            <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-            <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
-            <div class="invalid-feedback">Example invalid feedback text</div>
-          </div></div>
-      </div>
+        <div class="col-6" style="background-color: lightgreen">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>primera foto</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti molestiae inventore iure, culpa incidunt molestias optio, quasi reprehenderit eius dolore excepturi, autem animi temporibus aliquam odio soluta minima? Aperiam, temporibus!</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Segunda foto</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni repellat labore dolores sit omnis! Aliquam sit, exercitationem recusandae aperiam, quia, fugiat esse illo ex dolores labore fuga reiciendis expedita sint.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://via.placeholder.com/150" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Tercera foto</h5>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae maiores magnam exercitationem voluptatibus omnis officiis saepe tempore rem, nisi rerum minus optio necessitatibus, minima excepturi soluta fuga deserunt non? Porro?</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
     </div>
 
     <script
