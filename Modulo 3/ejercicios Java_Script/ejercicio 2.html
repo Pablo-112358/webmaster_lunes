@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 2</title>
+</head>
+
+<body>
+  <script>
+   var numeros=[2,5,87,23,6,9,7,5,52,64,16,45];
+
+function selecion_mayor(array){
+    var mayor=0;
+    for(var i=0;i<array.length;i++){
+        if (array[i]>mayor) {
+            mayor=array[i]   
+        }
+        //document.write('El numero mayor del array es: '+mayor);
+    }
+document.write('El numero mayor del array es: '+mayor);
+}
+selecion_mayor(numeros)
+  </script>
+</body>
+</html>
