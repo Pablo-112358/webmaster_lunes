@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="cuadrado rojo" onclick="cambiarFondo('red')">cuadrado Rojo</div>
+        <div class="cuadrado verde" onclick="cambiarFondo('green')">cuadrado Verde</div>
+        <div class="cuadrado azul" onclick="cambiarFondo('blue')">cuadrado Azul</div>
+        <div class="cuadrado reset" onclick="cambiarFondo('white')">reset</div>
+    </div>
+    
+    <style>
+        .contenedor{
+            display: flex;
+        }
+        .cuadrado{
+            height: 100px;
+            width: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .rojo{
+            background-color: red;
+        }
+        .verde{
+            background-color: green;
+        }
+        .azul{
+            background-color: blue;
+        }
+        .cuadrado:hover{
+            cursor: pointer
+
+        }
+        .reset{
+            background-color:white;
+    
+        }
+    </style>
+    <script>
+        function cambiarFondo(color){
+            document.querySelector('body').style.background = color
+        }
+        function cambiarFondo(color){
+            document.querySelector('body').style.background = color
+        }
+
+    </script>
+</body>
+</html>
