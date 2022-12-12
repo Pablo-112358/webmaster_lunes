@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 require('dotenv').config();
 
+var pool = require('./models/bd')
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var contactoRouter = require('./routes/contacto');
@@ -13,6 +15,7 @@ var galeriaRouter = require('./routes/galeria');
 var nosotrosRouter = require('./routes/nosotros');
 var novedadesRouter = require('./routes/novedades');
 var serviciosRouter = require('./routes/servicios');
+const { query } = require('express');
 
 
 var app = express();
@@ -34,6 +37,43 @@ app.use('/galeria', galeriaRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/novedades', novedadesRouter);
 app.use('/servicios', serviciosRouter);
+
+// Ejecución de consultas
+// SELECT
+
+// pool.query('select * from empleados').then(function(resultados){
+//   console.log(resultados)
+// });
+
+// INSERT
+// var obj = {
+//   nombre: 'Juan',
+//   apellido:'Lopez',
+//   trabajo: 'docente',
+//   edad:38,
+//   salario: 1500,
+//   mail:'juanlopez@gmail.com' }
+
+// pool.query('insert into empleados set ?', [obj]).then(function(resultados){
+// console.log(resultados)});
+
+//UPDATE
+
+// var id_emp = 23;
+// var obj = {
+//   nombre: 'pablo',
+//   apellido: 'gomez'
+// }
+
+// pool.query('update empleados set ? where id_emp=?', [obj,id_emp]).then(function(resultados){
+//   console.log(resultados)
+// });
+
+//DELETE
+var id_emp=24;
+pool.query('delete from empleados where id_emp =?', [id_emp]).then(function(resultados){
+  console.log(resultados);
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
