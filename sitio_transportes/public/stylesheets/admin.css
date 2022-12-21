@@ -1,0 +1,28 @@
+header {
+    background-color: #2e64a1;
+    padding: 25px 0;
+    text-align: center;
+  }
+
+header h1{
+    bottom: 0;
+}
+ form{
+    padding: 50px 0;
+   
+  
+ }
+
+ openModal { 
+  margin: 1em auto; 
+  display: block; 
+  width: 200px; 
+  background: #ccc; 
+  text-align: center; 
+  text-decoration: none; 
+  color: black; 
+  padding: 10px; 
+  text-shadow: 0 1px 0 #fff; 
+  border: 1px solid rgba(0,0,0,0.1); 
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
+}

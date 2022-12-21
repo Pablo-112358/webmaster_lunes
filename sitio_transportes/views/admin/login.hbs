@@ -1,0 +1,31 @@
+<div class="container" style="margin-stop:100px auto"></div>
+<div class="row">
+  <form action="/admin/login" method="post">
+    <div class="mb-3 row">
+      <div class="col-sm-10">
+        <input
+          type="text"
+          class="form-control"
+          id="InputUser"
+          placeholder="Usuario"
+          name="usuario"
+        />
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <div class="col-sm-10">
+        <input
+          type="pasword"
+          class="form-control"
+          id="Inputpassword"
+          placeholder="Contraseña"
+          name="password"
+        />
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary"> Ingresar</button>
+  </form>
+  {{#if error}}
+  <p> Usuario o concraseña incorrectos.</p>
+  {{/if}}
+</div>

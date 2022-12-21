@@ -53,6 +53,40 @@ app.get('/salir', function (req,res){
   res.redirect('/');
 });
 
+/* Ejercicio */
+
+// app.use(function(req, res, next){
+//   if (!req.session.visitas){
+//     req.session.visitas={};
+//   }
+//   /**
+//    * buscamos una clave dentro session.visitas que
+//    * coincida con la URL actual. si no existe, la
+//    * iniciamos en 1. si existe sumamos 1 al contador
+//    * de esa ruta
+//    */
+//   if (!req.session.visitas[req.originalUrl]){
+//     req.session.visitas[req.originalUrl] = 1;
+//   }else{
+//     req.session.visitas[req.originalUrl]++;
+//     }
+//     next();
+// });
+
+// app.get('/nosotros', function(res, req){
+//   res.render('pagina', {
+//     nombre: 'nosotros',
+//     visitas: req.session.visitas[req.originalUrl]
+//   });
+// });
+
+// app.get('/contacto', function(res, req){
+//   res.render('pagina', {
+//     nombre: 'contacto',
+//     visitas: req.session.visitas[req.originalUrl]
+//   });
+// });
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
