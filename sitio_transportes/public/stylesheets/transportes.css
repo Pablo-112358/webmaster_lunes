@@ -248,7 +248,8 @@ h2 {
 
 .formulario textarea{
     resize: none ;
-    height: 150px;
+    height: 250px;
+    width: 210px;
 }
 
 .formulario input[type="submit"] {

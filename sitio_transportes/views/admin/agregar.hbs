@@ -1,0 +1,42 @@
+<div class="container" style="margin-stop:100px auto"></div>
+  <div class="row">
+    <div class="col-6 offset-3">
+      <h4>Agregar contenido a Novedades</h4>
+      {{!-- <p class="text-end"><a class="btn btn-danger" href="/admin/login/logout"> Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></p> --}}
+      <form method="post" action="/admin/novedades/agregar" >
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Titulo"
+            name="titulo"
+          />
+        </div>
+        <br>
+        <div class="form-group">
+          <textarea
+            type="text"
+            class="form-control"
+            placeholder="Subtitulo"
+            name="subtitulo"
+          ></textarea>
+        </div>
+        <br>
+        <div class="form-group">
+          <textarea
+            type="text"
+            class="form-control"
+            placeholder="Cuerpo"
+            name="cuerpo"
+          ></textarea>
+        </div>
+        <hr>
+        <button type="submit" class="btn btn-primary">Guargar</button>
+        <a href="/admin/novedades" class="btn btn-primary">  Atras  </a>
+      </form>
+      {{#if error}}
+      <p>{{message}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>
