@@ -7,12 +7,7 @@ header {
 header h1{
     bottom: 0;
 }
- form{
-    padding: 50px 0;
-   
-  
- }
-
+/* 
  openModal { 
   margin: 1em auto; 
   display: block; 
@@ -25,4 +20,4 @@ header h1{
   text-shadow: 0 1px 0 #fff; 
   border: 1px solid rgba(0,0,0,0.1); 
   box-shadow: 0 1px 1px rgba(0,0,0,0.3); 
-}
+} */
